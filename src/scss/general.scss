@@ -1,0 +1,208 @@
+body{
+    background-color: #F7F7F7;
+}
+.preloader{
+    width: 100%;
+    height: 100vh;
+    z-index: 999999;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    opacity: 1;
+    .loader-circle{
+        border: 8px solid transparent;
+        border-radius: 50%;
+        position: absolute;
+        width: 60px;
+        height: 60px;
+        border-top: 8px solid #6AB04D;
+        border-bottom: 8px solid #B7143F;
+        border-right: 8px solid #6AB04D;
+        border-left: 8px solid #F1C40F;
+        transform: rotate(90deg);
+        animation: load 2s linear infinite;
+    }
+    @keyframes load {
+        from {transform: rotate(0deg) };
+        to {transform: rotate(360deg)}
+    }
+}
+p{
+    color: #9A9A9A;
+    font-size: 0.79rem;
+}
+h6{
+    color: #42425E;
+    display: inline-block;
+    margin-left: 5px;
+    font-size: 1.1rem;
+}
+.main-first-col{
+    padding-right: 10px;
+}
+.main-second-col{
+    padding-left: 10px;
+}
+.nav-icon{
+    width: 24px;
+    height: 20px;
+    vertical-align: middle;
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    span{
+        width: 22px;
+        height: 1.5px;
+        display: block;
+        background-color: #575A71;
+        position: absolute;
+    }
+    span:first-child{
+        top:0;
+    }
+    span:nth-child(2){
+        top: 7px;
+    }
+    span:last-child{
+        top:14px;
+    }
+}
+.dropdown{
+    display: inline-flex;
+    .btn{
+        box-shadow: none;
+        padding: 0;
+    }
+    .dropdown-item:active{
+        background-color: #4F61AD;
+        color: white;
+        i{
+            color: white;
+        }
+    }
+}
+section{
+    margin-bottom: 1.5rem;
+    .count-col{
+        .second-row{
+            margin-top: 1.5rem;
+        }
+    }
+    .social-icon{
+        display: inline-block;
+        width: 28px;
+        height: 28px;
+        border-radius: 50%;
+        text-align: center;
+        line-height: 26px;
+        color: white;
+        border: 2px solid #DBEBF2;
+        font-size: 0.8rem;
+    }
+    .twitter-icon{
+        background-color: #7CC5F8;
+    }
+    .facebook-icon{
+        background-color: #365397;
+    }
+    a{
+        color: #42425E;
+        i{
+            color: #9A9A9A;
+            margin-right: 3px;
+        }
+    }
+    .dropdown{
+        .dropdown-menu{
+            min-width: 8rem;
+        }
+        .dropdown-toggle::after{
+            display: none;
+        }
+    }
+    .note-paragraph{
+        margin-left: 35px;
+        p{
+            margin-bottom: 0;
+            display: inline-block;
+        }
+        p:nth-child(2) {
+            margin-left: 10px;
+        }   
+    }
+    .icon-col{
+        text-align: right;
+    }
+    .count-row {
+        span{
+            font-size: 1.34rem;
+        }
+        .col-lg-6:first-child{
+            span{
+                color: #42425E
+            }
+        }
+        .col-lg-6:last-child{
+            i{
+                margin-right: 10px;
+            }
+            span{
+                color: #9DC589
+            }
+        }
+    }
+    .anychart-credits {
+        a{
+            display: none;
+        }
+    }
+}
+
+/************** Medium Size (md) ***************/
+@media all and (max-width: 991.98px) {
+    .main-first-col{
+        padding-right: 15px;
+    }
+    .main-second-col{
+        padding-left: 15px;
+    }
+    section{
+        margin-bottom: 0;
+        .count-col{
+            .second-row{
+                margin-top: 0;
+            }
+            .second-row > .col-lg-6{
+                margin-bottom: 0
+            }
+        }
+        .row{
+           .col-lg-6{
+               margin-bottom: 1.5rem;
+           }
+        }
+    }
+}
+/************** Extra Small Size (xs) ***************/
+@media all and (max-width: 575.98px) {
+    html{
+        font-size: 15px;
+    }
+}
+@media all and (max-width: 348px) {
+    section {
+        .note-paragraph{
+            p{
+                display: block;
+            }
+            p:nth-child(2){
+                margin-left: 0;
+                margin-top: 5px;
+            }
+        }
+    } 
+}
+
+

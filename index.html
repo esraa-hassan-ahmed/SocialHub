@@ -1,0 +1,696 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset = "utf.8">
+        <meta name = "description" content= "Landing Page Of SocialHub">
+        <meta http-equiv = "X-UA-Compatible" content="IE=edge">
+        <meta name = "viewport" content="width = device-width, initial-scale = 1">
+        <title> SocialHub  </title>
+        <link rel="shortcut icon" href="dist/Pic/shortcut.jpg">
+        <link rel="stylesheet" href="dist/css/all.min.css">
+        <link rel="stylesheet" href="dist/css/anychart-ui.min.css">
+        <link rel="stylesheet" href="dist/css/jqcloud.min.css">
+        <link rel="stylesheet" href="dist/css/base.css">
+    </head>
+    <body>
+         <!--------------------------- PreLoader Page ---------------------------------->
+        <div class="preloader">
+            <div class="loader-content">
+                <div class="loader loader-circle"> </div>
+            </div>
+        </div>
+        <!--------------------------- Header ---------------------------------->
+        <header>
+            <!----------------- First Nav ------------------>
+            <nav class="first-nav navbar-expand-lg navbar">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#"><img src="dist/Pic/Logo.jpg" alt="Logo"></a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon">
+                            <i class="fa fa-bars"></i>
+                        </span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="#">Analytics</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Campaigns</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Engagement</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Role &amp; Permissions</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Organization</a>
+                            </li>
+                        </ul>
+                        <div class="notify-icon">
+                            <a href="#">
+                                <span class="badge badge-light">3</span>
+                                <i class="far fa-bell"></i>
+                            </a>
+                            <a href="#">
+                                <span class="badge badge-light">1</span>
+                                <i class="far fa-envelope"></i>
+                            </a>      
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <!----------------- Second Nav ------------------>
+            <nav class="second-nav navbar-expand-lg navbar">
+                <div class="container-fluid">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon">
+                            <i class="fa fa-bars"></i>
+                        </span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="#">Dashboard</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Streams</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Comparative</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Influencers</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <!------------------- Last Nav -------------------->
+            <div class="last-nav">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="nav-icon">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                            <h5>Stream Monitoring Dashboard</h5>
+                        </div>
+                        <div class="col-lg-6">
+                            <ul>
+                                <li>
+                                    <a href="#">
+                                        <i class="fas fa-plus"></i>
+                                        <span>Add</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fas fa-file-export"></i>
+                                        <span>Export</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <div class="dropdown">
+                                        <a class="btn dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                <i class="fa fa-calendar-alt"></i>
+                                                <span>Date</span>
+                                        </a>
+                                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuLink">
+                                            <a class="dropdown-item" href="#">Action</a>
+                                            <a class="dropdown-item" href="#">Another action</a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="dropdown">
+                                        <a class="btn dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                <i class="fa fa-filter"></i>
+                                                <span>Filter by platform</span>
+                                        </a>
+                                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuLink">
+                                            <a class="dropdown-item" href="#">Action</a>
+                                            <a class="dropdown-item" href="#">Another action</a>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid">
+                <form>
+                    <label for="exampleFormControlSelect1">Stream</label>
+                    <select class="form-control first-select" id="exampleFormControlSelect1">
+                        <option>Vodafone</option>
+                        <option>Option</option>
+                    </select> 
+                    <label for="exampleFormControlSelect1">Filter</label>
+                    <select class="form-control" id="exampleFormControlSelect1">
+                        <option>None</option>
+                        <option>Option</option>
+                    </select>
+                </form>
+            </div>
+        </header>
+        <!--------------------------- Section (1) ---------------------------------->
+        <section class="sec1">
+            <div class="container-fluid">
+                <div class="row">
+                    <!----------------- First Column ------------------>
+                    <div class="col-lg-6 main-first-col">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-lg-10 col-md-10 col-sm-10 col-10">
+                                        <div class="social-icon twitter-icon">
+                                            <i class="fab fa-twitter"></i>
+                                        </div>
+                                        <h6>Twitter Sentiment</h6>
+                                        <div class="note-paragraph">
+                                            <p>Last Month</p>
+                                            <p>Aggregrated by Day</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-2 col-md-2 col-sm-2 col-2 icon-col">
+                                        <div class="dropdown">
+                                            <a class="btn dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                <div class="nav-icon">
+                                                    <span></span>
+                                                    <span></span>
+                                                    <span></span>
+                                                </div>
+                                            </a>
+                                            <div class="dropdown-menu  dropdown-menu-right" aria-labelledby="dropdownMenuLink">
+                                                <a class="dropdown-item" href="#"><i class="fa fa-cog"></i> Setting</a>
+                                                <a class="dropdown-item" href="#"><i class="fa fa-sync-alt"></i> Reload</a>
+                                                <a class="dropdown-item" href="#"><i class="fas fa-trash-alt"></i> Delete</a>
+                                            </div>
+                                        </div> 
+                                    </div>
+                                </div>
+                                <div id="donut" style="width: 100%; height: 285px;"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <!----------------- Second Column ------------------>
+                    <div class="col-lg-6 count-col main-second-col">
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6 col-sm-6 first-col">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <div class="row">
+                                            <div class="col-lg-9 col-md-9 col-sm-9 col-9">
+                                                <div class="social-icon twitter-icon">
+                                                    <i class="fab fa-twitter"></i>
+                                                </div>
+                                                <h6>Tweets Count</h6>
+                                                <div class="note-paragraph">
+                                                    <p>Last Month</p>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-3 col-md-3 col-sm-3 col-3 icon-col">
+                                                <div class="dropdown">
+                                                    <a class="btn dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                        <div class="nav-icon">
+                                                            <span></span>
+                                                            <span></span>
+                                                            <span></span>
+                                                        </div>
+                                                    </a>
+                                                    <div class="dropdown-menu  dropdown-menu-right" aria-labelledby="dropdownMenuLink">
+                                                        <a class="dropdown-item" href="#"><i class="fa fa-cog"></i> Setting</a>
+                                                        <a class="dropdown-item" href="#"><i class="fa fa-sync-alt"></i> Reload</a>
+                                                        <a class="dropdown-item" href="#"><i class="fas fa-trash-alt"></i> Delete</a>
+                                                    </div>
+                                                </div> 
+                                            </div>
+                                        </div>
+                                        <div class="row count-row mt-3">
+                                            <div class="col-lg-6 col-md-6 first-col">
+                                                <p>Total</p>
+                                                <span>68.934 K</span>
+                                            </div>
+                                            <div class="col-lg-6 col-md-6 second-col">
+                                                <p>Change during last week</p>
+                                                <span><i class="fas fa-arrow-up"></i>300</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-6 second-col">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <div class="row">
+                                            <div class="col-lg-9 col-md-9 col-sm-9 col-9">
+                                                <div class="social-icon facebook-icon">
+                                                    <i class="fab fa-facebook-f"></i>
+                                                </div>
+                                                <h6>FB Comments Count</h6>
+                                                <div class="note-paragraph">
+                                                    <p>Last Month</p>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-3 col-md-3 col-sm-3 col-3 icon-col">
+                                                <div class="dropdown">
+                                                    <a class="btn dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                        <div class="nav-icon">
+                                                            <span></span>
+                                                            <span></span>
+                                                            <span></span>
+                                                        </div>
+                                                    </a>
+                                                    <div class="dropdown-menu  dropdown-menu-right" aria-labelledby="dropdownMenuLink">
+                                                        <a class="dropdown-item" href="#"><i class="fa fa-cog"></i> Setting</a>
+                                                        <a class="dropdown-item" href="#"><i class="fa fa-sync-alt"></i> Reload</a>
+                                                        <a class="dropdown-item" href="#"><i class="fas fa-trash-alt"></i> Delete</a>
+                                                    </div>
+                                                </div> 
+                                            </div>
+                                        </div>
+                                        <div class="row count-row mt-3">
+                                            <div class="col-lg-6 col-md-6 first-col">
+                                                <p>Total</p>
+                                                <span>61.600 K</span>
+                                            </div>
+                                            <div class="col-lg-6 col-md-6 second-col">
+                                                <p>Change during last week</p>
+                                                <span><i class="fas fa-arrow-up"></i>150</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row second-row">
+                            <div class="col-lg-6 col-md-6 col-sm-6 first-col">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <div class="row">
+                                            <div class="col-lg-9 col-md-9 col-sm-9 col-9">
+                                                <div class="social-icon twitter-icon">
+                                                    <i class="fab fa-twitter"></i>
+                                                </div>
+                                                <h6>Tweets Count</h6>
+                                                <div class="note-paragraph">
+                                                    <p>Last Month</p>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-3 col-md-3 col-sm-3 col-3 icon-col">
+                                                <div class="dropdown">
+                                                    <a class="btn dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                        <div class="nav-icon">
+                                                            <span></span>
+                                                            <span></span>
+                                                            <span></span>
+                                                        </div>
+                                                    </a>
+                                                    <div class="dropdown-menu  dropdown-menu-right" aria-labelledby="dropdownMenuLink">
+                                                        <a class="dropdown-item" href="#"><i class="fa fa-cog"></i> Setting</a>
+                                                        <a class="dropdown-item" href="#"><i class="fa fa-sync-alt"></i> Reload</a>
+                                                        <a class="dropdown-item" href="#"><i class="fas fa-trash-alt"></i> Delete</a>
+                                                    </div>
+                                                </div> 
+                                            </div>
+                                        </div>
+                                        <div class="row count-row mt-3">
+                                            <div class="col-lg-6 col-md-6 first-col">
+                                                <p>Total</p>
+                                                <span>60.834 K</span>
+                                            </div>
+                                            <div class="col-lg-6 col-md-6 second-col">
+                                                <p>Change during last week</p>
+                                                <span><i class="fas fa-arrow-up"></i>200</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--------------------------- Section (2) ---------------------------------->
+        <section class="sec2">
+            <div class="container-fluid">
+                <div class="row">
+                    <!----------------- First Column ------------------>
+                    <div class="col-lg-6 main-first-col">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-lg-10 col-md-10 col-sm-10 col-10">
+                                        <div class="social-icon twitter-icon">
+                                            <i class="fab fa-twitter"></i>
+                                        </div>
+                                        <h6>Map Chart Widget</h6>
+                                        <div class="note-paragraph">
+                                            <p>Last Month</p>
+                                            <p>Aggregrated by Day</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-2 col-md-2 col-sm-2 col-2 icon-col">
+                                        <div class="dropdown">
+                                            <a class="btn dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                <div class="nav-icon">
+                                                    <span></span>
+                                                    <span></span>
+                                                    <span></span>
+                                                </div>
+                                            </a>
+                                            <div class="dropdown-menu  dropdown-menu-right" aria-labelledby="dropdownMenuLink">
+                                                <a class="dropdown-item" href="#"><i class="fa fa-cog"></i> Setting</a>
+                                                <a class="dropdown-item" href="#"><i class="fa fa-sync-alt"></i> Reload</a>
+                                                <a class="dropdown-item" href="#"><i class="fas fa-trash-alt"></i> Delete</a>
+                                            </div>
+                                        </div> 
+                                    </div>
+                                </div>
+                                <div class="mt-4" id="map_chart" style="width: 100%;height: 261px;"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <!----------------- Second Column ------------------>
+                    <div class="col-lg-6 main-second-col">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-lg-10 col-md-10 col-sm-10 col-10">
+                                        <div class="social-icon facebook-icon">
+                                            <i class="fab fa-facebook-f"></i>
+                                        </div>
+                                        <h6>FB Sentiment oF comments</h6>
+                                        <div class="note-paragraph">
+                                            <p>Last Month</p>
+                                            <p>Aggregrated by Day</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-2 col-md-2 col-sm-2 col-2 icon-col">
+                                        <div class="dropdown">
+                                            <a class="btn dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                <div class="nav-icon">
+                                                    <span></span>
+                                                    <span></span>
+                                                    <span></span>
+                                                </div>
+                                            </a>
+                                            <div class="dropdown-menu  dropdown-menu-right" aria-labelledby="dropdownMenuLink">
+                                                <a class="dropdown-item" href="#"><i class="fa fa-cog"></i> Setting</a>
+                                                <a class="dropdown-item" href="#"><i class="fa fa-sync-alt"></i> Reload</a>
+                                                <a class="dropdown-item" href="#"><i class="fas fa-trash-alt"></i> Delete</a>
+                                            </div>
+                                        </div> 
+                                    </div>
+                                </div>
+                                <div id="pie" style="width: 100%; height: 285px;"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--------------------------- Section (3) ---------------------------------->
+        <section class="sec3">
+            <div class="container-fluid">
+                <div class="row">
+                    <!----------------- First Column ------------------>
+                    <div class="col-lg-6 main-first-col">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-lg-10 col-md-10 col-sm-10 col-10">
+                                        <div class="social-icon facebook-icon">
+                                            <i class="fab fa-facebook-f"></i>
+                                        </div>
+                                        <h6>Posts With Comments Count over time</h6>
+                                        <div class="note-paragraph">
+                                            <p>Last Month</p>
+                                            <p>Aggregrated by Day</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-2 col-md-2 col-sm-2 col-2 icon-col">
+                                        <div class="dropdown">
+                                            <a class="btn dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                <div class="nav-icon">
+                                                    <span></span>
+                                                    <span></span>
+                                                    <span></span>
+                                                </div>
+                                            </a>
+                                            <div class="dropdown-menu  dropdown-menu-right" aria-labelledby="dropdownMenuLink">
+                                                <a class="dropdown-item" href="#"><i class="fa fa-cog"></i> Setting</a>
+                                                <a class="dropdown-item" href="#"><i class="fa fa-sync-alt"></i> Reload</a>
+                                                <a class="dropdown-item" href="#"><i class="fas fa-trash-alt"></i> Delete</a>
+                                            </div>
+                                        </div> 
+                                    </div>
+                                </div>
+                                <div id="line" class="mt-4" style="width: 100%; height: 285px;"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <!----------------- Second Column ------------------>
+                    <div class="col-lg-6 main-second-col">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-lg-10 col-md-10 col-sm-10 col-10">
+                                        <div class="social-icon twitter-icon">
+                                            <i class="fab fa-twitter"></i>
+                                        </div>
+                                        <h6>Positive &amp; Negative Tweets Over Time</h6>
+                                        <div class="note-paragraph">
+                                            <p>Last Month</p>
+                                            <p>Aggregrated by Day</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-2 col-md-2 col-sm-2 col-2 icon-col">
+                                        <div class="dropdown">
+                                            <a class="btn dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                <div class="nav-icon">
+                                                    <span></span>
+                                                    <span></span>
+                                                    <span></span>
+                                                </div>
+                                            </a>
+                                            <div class="dropdown-menu  dropdown-menu-right" aria-labelledby="dropdownMenuLink">
+                                                <a class="dropdown-item" href="#"><i class="fa fa-cog"></i> Setting</a>
+                                                <a class="dropdown-item" href="#"><i class="fa fa-sync-alt"></i> Reload</a>
+                                                <a class="dropdown-item" href="#"><i class="fas fa-trash-alt"></i> Delete</a>
+                                            </div>
+                                        </div> 
+                                    </div>
+                                </div>
+                                <div id="line2" class="mt-4" style="width: 100%; height: 285px;"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--------------------------- Section (4) ---------------------------------->
+        <section class="sec4">
+            <div class="container-fluid">
+                <div class="row">
+                    <!----------------- First Column ------------------>
+                    <div class="col-lg-6 main-first-col">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-lg-10 col-md-10 col-sm-10 col-10">
+                                        <div class="social-icon twitter-icon">
+                                            <i class="fab fa-twitter"></i>
+                                        </div>
+                                        <h6>Top Fans Widget</h6>
+                                        <div class="note-paragraph">
+                                            <p>Last Month</p>
+                                            <p>Aggregrated by Day</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-2 col-md-2 col-sm-2 col-2 icon-col">
+                                        <div class="dropdown">
+                                            <a class="btn dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                <div class="nav-icon">
+                                                    <span></span>
+                                                    <span></span>
+                                                    <span></span>
+                                                </div>
+                                            </a>
+                                            <div class="dropdown-menu  dropdown-menu-right" aria-labelledby="dropdownMenuLink">
+                                                <a class="dropdown-item" href="#"><i class="fa fa-cog"></i> Setting</a>
+                                                <a class="dropdown-item" href="#"><i class="fa fa-sync-alt"></i> Reload</a>
+                                                <a class="dropdown-item" href="#"><i class="fas fa-trash-alt"></i> Delete</a>
+                                            </div>
+                                        </div> 
+                                    </div>
+                                </div>
+                                <div class="row mt-4">
+                                    <div class="col-lg-5 col-md-5 col-sm-5 name-col">
+                                        <div class="fan-img"></div>
+                                        <h6>Ahmed Ali</h6>
+                                    </div>
+                                    <div class="col-lg-7 col-md-7 col-sm-7">
+                                        <ul>
+                                            <li>
+                                                <span>38</span>
+                                                <i class="fa fa-sync"></i>
+                                            </li>
+                                            <li>
+                                                <span>8</span>
+                                                <i class="far fa-smile"></i>
+                                            </li>
+                                            <li>
+                                                <span>61</span>
+                                                <i class="far fa-frown"></i>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="row mt-2">
+                                    <div class="col-lg-5 col-md-5 col-sm-5 name-col">
+                                        <div class="fan-img"></div>
+                                        <h6>Ahmed Ali</h6>
+                                    </div>
+                                    <div class="col-lg-7 col-md-7 col-sm-7">
+                                        <ul>
+                                            <li>
+                                                <span>38</span>
+                                                <i class="fa fa-sync"></i>
+                                            </li>
+                                            <li>
+                                                <span>8</span>
+                                                <i class="far fa-smile"></i>
+                                            </li>
+                                            <li>
+                                                <span>61</span>
+                                                <i class="far fa-frown"></i>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="row mt-2">
+                                    <div class="col-lg-5 col-md-5 col-sm-5 name-col">
+                                        <div class="fan-img"></div>
+                                        <h6>Ahmed Ali</h6>
+                                    </div>
+                                    <div class="col-lg-7 col-md-7 col-sm-7">
+                                        <ul>
+                                            <li>
+                                                <span>38</span>
+                                                <i class="fa fa-sync"></i>
+                                            </li>
+                                            <li>
+                                                <span>8</span>
+                                                <i class="far fa-smile"></i>
+                                            </li>
+                                            <li>
+                                                <span>61</span>
+                                                <i class="far fa-frown"></i>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="row mt-2">
+                                    <div class="col-lg-5 col-md-5 col-sm-5 name-col">
+                                        <div class="fan-img"></div>
+                                        <h6>Ahmed Ali</h6>
+                                    </div>
+                                    <div class="col-lg-7 col-md-7 col-sm-7">
+                                        <ul>
+                                            <li>
+                                                <span>38</span>
+                                                <i class="fa fa-sync"></i>
+                                            </li>
+                                            <li>
+                                                <span>8</span>
+                                                <i class="far fa-smile"></i>
+                                            </li>
+                                            <li>
+                                                <span>61</span>
+                                                <i class="far fa-frown"></i>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="row mt-2">
+                                    <div class="col-lg-5 col-md-5 col-sm-5 name-col">
+                                        <div class="fan-img"></div>
+                                        <h6>Ahmed Ali</h6>
+                                    </div>
+                                    <div class="col-lg-7 col-md-7 col-sm-7">
+                                        <ul>
+                                            <li>
+                                                <span>38</span>
+                                                <i class="fa fa-sync"></i>
+                                            </li>
+                                            <li>
+                                                <span>8</span>
+                                                <i class="far fa-smile"></i>
+                                            </li>
+                                            <li>
+                                                <span>61</span>
+                                                <i class="far fa-frown"></i>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!----------------- Second Column ------------------>
+                    <div class="col-lg-6 main-second-col">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-lg-10 col-md-10 col-sm-10 col-10">
+                                        <div class="social-icon twitter-icon">
+                                            <i class="fab fa-twitter"></i>
+                                        </div>
+                                        <h6>Most frequent words</h6>
+                                        <div class="note-paragraph">
+                                            <p>Last Month</p>
+                                            <p>Aggregrated by Day</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-2 col-md-2 col-sm-2 col-2 icon-col">
+                                        <div class="dropdown">
+                                            <a class="btn dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                <div class="nav-icon">
+                                                    <span></span>
+                                                    <span></span>
+                                                    <span></span>
+                                                </div>
+                                            </a>
+                                            <div class="dropdown-menu  dropdown-menu-right" aria-labelledby="dropdownMenuLink">
+                                                <a class="dropdown-item" href="#"><i class="fa fa-cog"></i> Setting</a>
+                                                <a class="dropdown-item" href="#"><i class="fa fa-sync-alt"></i> Reload</a>
+                                                <a class="dropdown-item" href="#"><i class="fas fa-trash-alt"></i> Delete</a>
+                                            </div>
+                                        </div> 
+                                    </div>
+                                </div>
+                                <div id="cloud" style="width: 100%; height: 266px;"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--------------------------- Scripts ---------------------------------->
+        <script src="js/jquery/jquery.min.js"></script>
+        <script src="js/popper.js/dist/umd/popper.js"></script>
+        <script src="js/bootstrap/dist/js/bootstrap.min.js"></script>
+        <script src="js/anychart-base.min.js"></script>
+        <script src="js/jqcloud.min.js"></script>
+        <script src="https://www.amcharts.com/lib/4/core.js"></script>
+        <script src="https://www.amcharts.com/lib/4/maps.js"></script>
+        <script src="https://www.amcharts.com/lib/4/geodata/worldLow.js"></script>
+        <script src="js/script.js"></script>
+    </body>
+</html>

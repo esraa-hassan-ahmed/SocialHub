@@ -1,0 +1,57 @@
+.sec4{
+    .name-col{
+        .fan-img{
+            width: 35px;
+            height: 35px;
+            border-radius: 50%;
+            background-color: #F7F7F7;
+            overflow: hidden;
+            display: inline-block;
+            vertical-align: middle;
+            margin-left: 10px;
+        }
+        h6{
+            margin-left: 12px;
+        }
+    }
+    ul{
+        list-style: none;
+        li{
+            display: inline-block;
+            font-size: 1.1rem;
+            margin-left: 15px;
+            i{
+                margin-left: 8px;
+            }
+        }
+        li:first-child{
+            color: #42425E;
+        }
+        li:nth-child(2){
+            color: #425A8E;
+        }
+        li:last-child{
+            color: #CC758B;
+        }
+    }
+    #cloud{
+        span{
+            padding: 4px;
+        }
+    }
+    .col-lg-7{
+        text-align: right;
+    }
+}
+
+/************** Extra Small Size (xs) ***************/
+@media all and (max-width: 575.98px) {
+    .sec4{
+        .col-lg-7{
+            text-align: left;
+            ul{
+                margin-top: 10px;
+            }
+        }
+    }
+}

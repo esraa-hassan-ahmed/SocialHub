@@ -1,0 +1,180 @@
+.navbar{
+    padding: 0.5rem 0;
+    button:focus{
+        outline: 0;
+    }
+    span{
+        color: white;
+    }
+    .collapse{
+        a{
+            color: white;
+            opacity: 0.5;
+            transition: all 0.3s ease-in-out;
+        }
+        li:first-child{
+            a{
+                opacity: 1;
+            }
+        }
+        a:hover{
+            opacity: 1;
+        }
+    }
+}
+.first-nav{
+    background-color: #0C2462;
+    color: white;
+    img{
+        width: 60px;
+    }
+    .collapse{
+        .notify-icon{
+            .badge{
+                background-color: #71C5E1;
+                border-radius: 50%;
+                position: absolute;
+                top: 2px;
+                left: 2px;
+                font-size: 70%;
+            }
+            i{
+                font-size: 1.1rem;
+            }
+            a{
+                opacity: 1;
+                text-decoration: none;
+                position: relative;
+                padding: 10px;
+            }
+            a:last-child{
+                padding-right: 0;
+            }
+        }
+    }
+}
+.second-nav{
+    background-color: #1F3799;
+    .navbar-nav {
+        a{
+            font-size: 0.9rem;
+            padding: 3px 0;
+            border-radius: 0.8rem;
+            transition: all 0.3s ease-in-out;
+        }
+        li:first-child{
+            a{
+                background-color: #4F61AD;
+            }
+        }
+        a:hover{
+            background-color: #4F61AD;
+        }
+        .nav-link{
+            padding-right: 0.9rem;
+            padding-left: 0.9rem;
+        }
+    }
+}
+.last-nav{
+    padding: 0.8rem 0;
+    background-color: white;
+    .row{
+        margin: 0;
+        display: flex;
+        align-items: center;
+        h5{
+            color: #42425E;
+            margin: 0 0 0 5px;
+            display: inline-block;
+            font-size: 1.2rem;
+        }
+        .col-lg-6:first-child{
+            padding-left: 0;
+        }
+        .col-lg-6:last-child{
+            text-align: right;
+            padding-right: 0;
+        }
+        ul{
+            list-style: none;
+            margin: 0;
+            li{
+                display: inline-block;
+                margin-left: 10px;
+                a{
+                    text-decoration: none;
+                    color: #42425E;
+                    font-size: 0.9rem;
+                    i{
+                        margin-right: 2px;
+                    }
+                }
+                .dropdown{
+                    .dropdown-toggle::after{
+                        vertical-align: middle;
+                    }
+                }
+            }
+        }
+    }
+}
+form{
+    margin: 10px 0;
+    label{
+        color: #42425E;
+        margin-right: 6px;
+    }
+    .first-select{
+        margin-right: 12px;
+    }
+    .form-control{
+        display: inline-block;
+        width: 180px;
+        height: auto;
+        background-color: transparent;
+        border: 1px solid #9A9A9A;
+        border-radius: 6px;
+        padding: 3px 7px;
+        color: #9A9A9A;
+        font-size: 0.9rem;
+    }
+    .form-control:focus {
+        color: #9A9A9A;
+        background-color: transparent; 
+        border-color: #9A9A9A; 
+        box-shadow: none; 
+    }
+}
+/************** Medium Size (md) ***************/
+@media all and (max-width: 991.98px) {
+    .navbar-expand-lg > .container-fluid{
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .notify-icon{
+        margin-top: 15px;
+    }
+    .last-nav{
+        .row{
+            .col-lg-6:last-child{
+                text-align: left;
+                margin-top: 12px;
+                ul{
+                    padding-left: 0;
+                }
+            }
+        }
+    }
+}
+/************** Extra Small Size (xs) ***************/
+@media all and (max-width: 512px) {
+    form{
+        .form-control{
+            display: block;
+        }
+        .first-select{
+            margin-bottom: 10px;
+        }
+    }
+}
